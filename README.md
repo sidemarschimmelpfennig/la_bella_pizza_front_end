@@ -1,4 +1,4 @@
-# frontend
+# la_bella_pizza_front_end
 
 ## Project setup
 
