@@ -1,0 +1,67 @@
+@import '@/assets/scss/main';
+.sidebars {
+  width: 220px;
+  height: 100vh;
+  background: $black;
+    .top {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+      margin-top: 20px;
+      
+      .avatar {
+        margin-right: 10px;
+  
+        span {
+          display: block;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: $gray;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 25px;
+          color: $gray-dark;
+        }
+      }
+      .info {
+        p {
+          margin: 0;
+          color: $white;
+        }
+  
+        .status {
+          font-size: 18px;
+        }
+      }
+    }
+    .menu {
+      padding: 10px;
+  
+      ul li {
+        margin: 15px 0;
+        font-size: 18px;
+        list-style: none;
+        font-weight: 400;
+        a {
+          text-decoration: none;
+          color: $white;
+          i {
+            padding: 10px;
+          }
+          &:active{
+            color: $yellow-dark;
+          }
+          &:disabled{
+            color: white;
+          }
+        }
+
+      }
+
+
+    }
+  }

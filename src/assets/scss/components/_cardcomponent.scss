@@ -1,0 +1,40 @@
+@import '@/assets/scss/main';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    background-color: $yellow-dark;
+    color: $white;
+    padding: 15px;
+    border-radius: 7px;
+    margin: 0;
+    margin-bottom: 30px;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .top {
+        .percentage{
+            color: $green;
+            padding-bottom: 15px;
+            font-size: 15px;
+        }
+    }
+
+    .footer {
+        .qtd{
+            font-size: 25px;
+            margin: 0;
+        }
+          
+        .ico{
+            font-size: 30px;
+        }
+    }
+
+
+}

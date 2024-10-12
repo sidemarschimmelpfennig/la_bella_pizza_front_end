@@ -1,0 +1,65 @@
+@import '@/assets/scss/main';
+
+.login {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-image: url('@/assets/img/pizza_fundo.jpg');
+  background-size: cover;
+
+  .content-login {
+    width: 350px;
+    height: 400px;
+    background-color: rgba(22,22,22 , 0.7);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      h1 {
+        color: $white;
+        font-size: 28px;
+        font-family: 'Merienda' , cursive;
+        padding-left: 10px;
+      }
+    }
+    .form-login {
+       margin: 20px; 
+       width: 100%;
+       padding: 20px;
+      .field {
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 15px; 
+   
+        label {
+          color: $white;
+          margin-bottom: 5px;
+        }
+      
+        input {
+          height: 30px;
+          border: none;
+          border-radius: 5px;
+          padding: 5px;
+          width: 100%;
+          outline: none;
+          box-shadow: none;
+        }
+      }
+      button {
+        margin-top: 30px;
+      }
+
+    }
+   
+  }
+}
