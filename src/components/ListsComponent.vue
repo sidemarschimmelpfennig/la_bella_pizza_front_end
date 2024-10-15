@@ -16,7 +16,7 @@
         </thead>
         <tbody>
           <tr v-for="(user, i) in users" :key="i">
-            <th scope="custom-row">{{ user.id }}</th>
+            <th scope="customs-row">{{ user.id }}</th>
             <td>{{ user.name }}</td>
             <td>{{ user.email }}</td>
           </tr>

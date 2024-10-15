@@ -1,11 +1,13 @@
+import CreateAccountView from '@/views/CreateAccount/CreateAccountView.vue';
 import LoginView from '@/views/Login/LoginView.vue';
-import ConsumersView from '@/views/pages/Consumers/ConsumersView.vue';
+import ClientsView from '@/views/pages/Client/ClientsView.vue';
 import FinancialView from '@/views/pages/Financial/FinancialView.vue';
 import HomeView from '@/views/pages/Home/HomeView.vue';
-import ProductsView from '@/views/pages/Products/ProductsView.vue';
+import PizzasView from '@/views/pages/Products/PizzasView.vue';
 import ProvidersView from '@/views/pages/Providers/ProvidersView.vue';
 import ReportView from '@/views/pages/Report/ReportView.vue';
 import SaleNoteView from '@/views/pages/SaleNote/SaleNoteView.vue';
+import ResetPasswordView from '@/views/ResetPassword/ResetPasswordView.vue';
 
 import { createRouter, createWebHashHistory } from 'vue-router';
 
@@ -21,14 +23,14 @@ const routes = [
     name: 'home',
   },
   {
-    path: '/products',
-    component: ProductsView,
-    name: 'products',
+    path: '/pizzas',
+    component: PizzasView,
+    name: 'pizzas',
   },
   {
-    path: '/consumers',
-    component: ConsumersView,
-    name: 'consumers',
+    path: '/clients',
+    component: ClientsView,
+    name: 'clients',
   },
   {
     path: '/providers',
@@ -54,6 +56,16 @@ const routes = [
     path: '/login',
     component: LoginView,
     name: 'login',
+  },
+  {
+    path: '/createaccount',
+    component: CreateAccountView,
+    name: 'createaccount',
+  },
+  {
+    path: '/resetpassword',
+    component: ResetPasswordView,
+    name: 'resetpassword',
   },
 ];
 

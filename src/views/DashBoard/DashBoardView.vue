@@ -2,11 +2,11 @@
 <template>
   <div class="main">
     <div class="sidebar">
-      <SideBarComponent />
+      <SideBarComponent :isSidebarVisible="isSidebarVisible" />
     </div>
     <div class="content-right">
       <div class="navbar">
-        <NavBarComponent />
+        <NavBarComponent @toggle-sidebar="toggleSidebar" />
       </div>
       <div class="pages">
         <slot name="slot-page"></slot>

@@ -18,3 +18,24 @@
         background-color: lighten($yellow-dark , 10%);
     }
 }
+
+.button-cancel{
+    color: $white;
+    width: 100%;
+    padding: 10px;
+    background-color: $red-cancel;
+    border: none;
+    border-radius: 5px;
+    color: $black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+
+    &:hover {
+        background-color: lighten($red-cancel, 5%);
+    }
+
+    &:active{
+        background-color: lighten($red-cancel , 10%);
+    }
+}

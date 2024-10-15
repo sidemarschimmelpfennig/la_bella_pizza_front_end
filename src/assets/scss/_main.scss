@@ -3,7 +3,7 @@
 @import '@/assets/scss/globalstyle';
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
-
+@import '@fortawesome/fontawesome-free/css/all.css';
 
 .main{
     display: flex;
@@ -16,7 +16,7 @@
 
    padding: 15px;
    background-color: #e1e1e1;
-   min-height: 100vh;
+   height: 100%;
    .title_pages{
     margin-bottom: 15px;
         

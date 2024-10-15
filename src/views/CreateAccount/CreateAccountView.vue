@@ -4,7 +4,7 @@
       <div class="content-login">
         <header>
           <img :src="logo" width="32px" height="32px" />
-          <h1>La bella Pizza</h1>
+          <h1>Crie sua conta</h1>
         </header>
         <br />
 
@@ -32,14 +32,9 @@
               class="button-yellow"
               @click.prevent="login($event)"
             >
-              Entrar
+              Criar
             </button>
           </form>
-        </div>
-
-        <div class="accountoptions">
-          <a @click.prevent="resetpassword">esqueci a senha</a>
-          <a @click.prevent="createaccount">não tenho conta</a>
         </div>
       </div>
     </div>
@@ -47,7 +42,7 @@
 </template>
 <script>
 export default {
-  name: 'LoginView',
+  name: 'CreateAccountView',
   data() {
     return {
       teste: 'string',
@@ -57,12 +52,6 @@ export default {
   methods: {
     login() {
       this.$router.push({ name: 'home' });
-    },
-    resetpassword() {
-      this.$router.push({ name: 'resetpassword' });
-    },
-    createaccount() {
-      this.$router.push({ name: 'createaccount' });
     },
   },
 };

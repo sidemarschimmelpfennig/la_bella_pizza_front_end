@@ -6,8 +6,8 @@
           <p>Inicio</p>
         </header>
         <div>
-          <div class="custom-row">
-            <div class="custom-col">
+          <div class="customs-row">
+            <div class="customs-col">
               <CardComponent
                 :type="'Clientes'"
                 :percentage="'7%'"
@@ -15,7 +15,7 @@
                 :qtd="users.length"
               />
             </div>
-            <div class="custom-col">
+            <div class="customs-col">
               <CardComponent
                 :type="'Produtos'"
                 :percentage="'12%'"
@@ -23,7 +23,7 @@
                 :qtd="'350'"
               />
             </div>
-            <div class="custom-col">
+            <div class="customs-col">
               <CardComponent
                 :type="'Serviços'"
                 :percentage="'3%'"
@@ -31,7 +31,7 @@
                 :qtd="'270'"
               />
             </div>
-            <div class="custom-col">
+            <div class="customs-col">
               <CardComponent
                 :type="'Relatórios'"
                 :percentage="'25%'"
@@ -42,11 +42,11 @@
           </div>
         </div>
         <div>
-          <div class="custom-row">
-            <div class="custom-col column-media">
+          <div class="customs-row">
+            <div class="customs-col column-media">
               <ListsComponent :users="users" />
             </div>
-            <div class="custom-col column-media">
+            <div class="customs-col column-media">
               <ListsComponent :users="users" />
             </div>
           </div>

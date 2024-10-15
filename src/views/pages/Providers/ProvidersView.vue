@@ -16,6 +16,19 @@ export default {
   components: {
     DashBoardView,
   },
+  data() {
+    return {
+      title: 'Nome do Produto',
+      price: 29.99,
+      image: 'https://via.placeholder.com/150',
+      isEditing: false,
+    };
+  },
+  filters: {
+    currency(value) {
+      return `R$ ${value.toFixed(2)}`;
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>

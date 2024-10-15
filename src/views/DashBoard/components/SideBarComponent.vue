@@ -12,11 +12,7 @@
     <div class="menu">
       <ul>
         <SideBarItemComponent icon="fa-house" title="Inicio" route="home" />
-        <SideBarItemComponent
-          icon="fa-user"
-          title="Clientes"
-          route="consumers"
-        />
+        <SideBarItemComponent icon="fa-user" title="Clientes" route="clients" />
         <SideBarItemComponent
           icon="fa-bag-shopping"
           title="Vendas"
@@ -28,14 +24,9 @@
           route="providers"
         />
         <SideBarItemComponent
-          icon="fa-newspaper"
-          title="Relatórios"
-          route="report"
-        />
-        <SideBarItemComponent
           icon="fa-boxes-stacked"
-          title="Produtos"
-          route="products"
+          title="Pizzas"
+          route="pizzas"
         />
         <SideBarItemComponent
           icon="fa-boxes-stacked"

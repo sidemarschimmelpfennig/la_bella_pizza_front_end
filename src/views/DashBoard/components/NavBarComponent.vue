@@ -5,9 +5,16 @@
         <img :src="logo" width="32px" height="32px" @click.prevent="getHome" />
         <h3>La bella Pizza</h3>
       </div>
-      <a @click.prevent="logout" class="logout">
-        Logout <i class="fa-solid fa-right-from-bracket" />
-      </a>
+      <div>
+        <a class="menu-bar">
+          <i class="fa-solid fa-list" />
+        </a>
+        <a @click.prevent="logout" class="logout">
+          <span>Logout </span>
+
+          <i class="fa-solid fa-right-from-bracket" />
+        </a>
+      </div>
     </div>
   </div>
 </template>

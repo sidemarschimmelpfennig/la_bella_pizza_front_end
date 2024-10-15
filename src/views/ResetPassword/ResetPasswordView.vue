@@ -3,15 +3,17 @@
     <div class="login">
       <div class="content-login">
         <header>
-          <img :src="logo" width="32px" height="32px" />
-          <h1>La bella Pizza</h1>
+          <h1>Encontre sua conta</h1>
         </header>
         <br />
 
         <div class="form-login">
           <form>
             <div class="field">
-              <label for="email">Email</label>
+              <label for="email"
+                >Insira seu email. Será enviada um link para geração de uma
+                senha nova.</label
+              >
               <input
                 id="email"
                 type="email"
@@ -19,27 +21,21 @@
                 placeholder="Digite seu e-mail"
               />
             </div>
-            <div class="field">
-              <label for="password">Senha</label>
-              <input
-                id="password"
-                type="password"
-                placeholder="Digite sua senha"
-              />
-            </div>
             <button
               type="submit"
               class="button-yellow"
               @click.prevent="login($event)"
             >
-              Entrar
+              Enviar
+            </button>
+            <button
+              type="submit"
+              class="button-cancel"
+              @click.prevent="returnlogin($event)"
+            >
+              Cancelar
             </button>
           </form>
-        </div>
-
-        <div class="accountoptions">
-          <a @click.prevent="resetpassword">esqueci a senha</a>
-          <a @click.prevent="createaccount">não tenho conta</a>
         </div>
       </div>
     </div>
@@ -47,7 +43,7 @@
 </template>
 <script>
 export default {
-  name: 'LoginView',
+  name: 'ResetPasswordView',
   data() {
     return {
       teste: 'string',
@@ -58,11 +54,8 @@ export default {
     login() {
       this.$router.push({ name: 'home' });
     },
-    resetpassword() {
-      this.$router.push({ name: 'resetpassword' });
-    },
-    createaccount() {
-      this.$router.push({ name: 'createaccount' });
+    returnlogin() {
+      this.$router.push({ name: 'login' });
     },
   },
 };

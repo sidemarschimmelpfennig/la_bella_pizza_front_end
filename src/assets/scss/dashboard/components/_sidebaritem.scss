@@ -30,8 +30,9 @@
 .item.active {
     a {
         color: $yellow-dark;
-
+        font-weight: bold;
         i {
+            font-weight: bold;
             color: $yellow-dark;
         }
     }

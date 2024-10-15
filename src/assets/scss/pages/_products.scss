@@ -1,1 +1,18 @@
 @import '@/assets/scss/main';
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha quando não houver mais espaço */
+    gap: 5px; /* Espaçamento entre os cards */
+    justify-content: start; /* Alinhamento dos itens no início da linha */
+    width: 100%;
+
+    
+  }
+  
+  .card {
+    width: 20rem; /* Mantém a largura dos cards */
+    min-height: 350px; /* Define uma altura fixa para os cards */
+    display: flex; /* Garante que os itens internos possam ser alinhados */
+    flex-direction: column; /* Alinha os itens verticalmente */
+  }
+
